@@ -16,7 +16,7 @@ jobs:
           node-version: '20'
           cache: 'npm'
       - run: npm ci
-      - run: npm test -- --testPathIgnorePatterns=tests/
+      - run: npm run test:ci
 
   build:
     runs-on: ubuntu-latest

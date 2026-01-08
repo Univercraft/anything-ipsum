@@ -9,6 +9,7 @@
     "build:prod": "nx build --configuration production",
     "watch": "nx build --watch --configuration development",
     "test": "nx test",
+    "test:ci": "nx test --skip-nx-cache",
     "test:api": "jest --config jest.api.config.js --forceExit",
     "serve:ssr:anything-ipsum": "node dist/anything-ipsum/server/server.mjs",
     "dev": "nx serve --open",
