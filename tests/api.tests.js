@@ -7,7 +7,7 @@ describe('API Tests', () => {
     it('should return 200 and status ok', async () => {
       const response = await request(BASE_URL)
         .get('/api/health')
-        .expect(200);
+        .expect(500);//Modifié pour testé l'échec
 
       expect(response.body).toHaveProperty('status', 'ok');
     });
